@@ -1,0 +1,66 @@
+* , *::after, *::before{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-height: 80vh;
+    --clicker-width: 75%;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: calc(100% - var(--main-height));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+main {
+    height: var(--main-height);
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+
+#clicker {
+    height: 100%;
+    width: var(--clicker-width);
+    background-color: #142d4c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shop {
+    height: 100%;
+    width: calc(100% - var(--clicker-width));
+    background-color: #9fd3c7;
+}
+
+#main-circle {
+    height: calc(var(--main-height)* 0.5);
+    width: calc(var(--main-height)* 0.5);
+    border-radius: 50%;
+    background-image: url('/images/cookie.jpg');
+}
+
+h1 {
+    font-size: 40px;
+}
+span {
+    color: green;
+}
+
+#cookie-text {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
