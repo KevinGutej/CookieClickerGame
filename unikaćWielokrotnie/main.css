@@ -19,33 +19,75 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #2081C3;
 }
 
 main {
     height: var(--main-height);
     width: 100%;
-    background-color: red;
+   
     display: flex;
 }
 
 #clicker {
     height: 100%;
     width: var(--clicker-width);
-    background-color: blue;
+    background-color: #63D2FF;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #shop {
     height: 100%;
     width: calc(100% - var(--clicker-width));
-    background-color: green;
+    background-color: #F7F9F9;
+
 }
 
 #main-circle {
     height: calc(var(--main-height)* 0.5);
     width: calc(var(--main-height)* 0.5);
     border-radius: 50%;
-    background-color: yellow;
+    background-image: url('/images/cookie.jpg');
+    background-position: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+span {
+    color: black;
+}
+
+#cookie-text {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 25px;
+    color: white;
+}
+
+#items {
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 75px; 
+    margin-top: 65px;
+    margin-left: 20px;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    justify-items: stretch;
+
+}
+
+li {
+    width: 100%;
+}
+
+.click-to-buy {
+    height: 25px;
+    color: green;
 }
