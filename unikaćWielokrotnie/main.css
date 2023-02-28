@@ -50,7 +50,7 @@ main {
     height: calc(var(--main-height)* 0.5);
     width: calc(var(--main-height)* 0.5);
     border-radius: 50%;
-    background-image: url('/images/cookie.jpg');
+    background-image: url('/images/biscuit.jpg');
     background-position: center;
 }
 
@@ -62,7 +62,7 @@ span {
     color: black;
 }
 
-#cookie-text {
+#biscuit-text {
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     margin: 25px;
