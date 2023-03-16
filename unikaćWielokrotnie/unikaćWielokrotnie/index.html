@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Biscuit clicker</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1><span>B</span>iscuit <span>C</span>licker</h1>
+        </nav>
+    </header>
+    <main>
+        <section id="clicker">
+            <div id="main-circle"></div>
+            <p id="biscuit-text">Biscuits : <span id="biscuit-counter" style="color:green">0</span></p>
+        </section>
+        <section id="shop">
+            <ol id="items">
+                <li data-itemId="item1" data-itemType="biscuitsPerClick">
+                    <p>Normal Biscuit (+<span class="effect-value">1</span> <span class="effect-type">Biscuit per
+                            click</span>)</p>
+                    <p>Price: $ <span class="item-price">1</span></p>
+                    <p>Already Bought: <span class="item-counter">0</span></p>
+                    <button type="button" class="click-to-buy">Click to buy!</button>
+                </li>
+
+                <li data-itemId="item2" data-itemType="biscuitsPerClick">
+                    <p>Golden Biscuit (+<span class="effect-value">5</span> <span class="effect-type">Biscuit per
+                            click</span>)</p>
+                    <p>Price: $ <span class="item-price">0</span></p>
+                    <p>Already Bought: <span class="item-counter">0</span></p>
+                    <button type="button" class="click-to-buy">Click to buy!</button>
+                </li>
+
+                <li data-itemId="item3" data-itemType="biscuitsPerClick">
+                    <p>Riambow Biscuit (+<span class="effect-value">50</span> <span class="effect-type">Biscuit per
+                            click</span>)</p>
+                    <p>Price: $ <span class="item-price">0</span></p>
+                    <p>Already Bought: <span class="item-counter">0</span></p>
+                    <button type="button" class="click-to-buy">Click to buy!</button>
+                </li>
+
+                <li data-itemId="item4" data-itemType="biscuitsPerSec">
+                    <p>FastClicker (+<span class="effect-value">5</span> <span class="effect-type">per second</span>)
+                    </p>
+                    <p>Price: $ <span class="item-price">0</span></p>
+                    <p>Already Bought: <span class="item-counter">0</span></p>
+                    <button type="button" class="click-to-buy">Click to buy!</button>
+                </li>
+
+                <li data-itemId="item5" data-itemType="biscuitsPerSec">
+                    <p>InsaneClicker (+<span class="effect-value">20</span> <span class="effect-type">per second</span>)
+                    </p>
+                    <p>Price: $ <span class="item-price">0</span></p>
+                    <p>Already Bought: <span class="item-counter">0</span></p>
+                    <button type="button" class="click-to-buy">Click to buy!</button>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
