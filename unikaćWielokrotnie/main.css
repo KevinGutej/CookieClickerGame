@@ -25,7 +25,6 @@ header {
 main {
     height: var(--main-height);
     width: 100%;
-   
     display: flex;
 }
 
