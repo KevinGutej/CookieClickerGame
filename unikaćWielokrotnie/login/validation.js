@@ -8,8 +8,8 @@ class Validation {
         if(em.length < 6 || em.length > 30) {
             console.log("You email is to long or to short")
         }
-        if(! new RegExp("/*@*/").test(em)) {
-            
+        if(! new RegExp("^\w+@\w+\.\w+$").test(em)) {
+
         }
     }
 }

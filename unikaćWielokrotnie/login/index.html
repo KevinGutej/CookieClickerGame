@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    
     <title>Biscuit clicker login</title>
 </head>
 
@@ -13,22 +14,25 @@
     <main>
         <h1>Login</h1>
         <form action="">
-            <div class = "inputGroup">
+            <div class="inputGroup">
                 <label for="email">Email</label>
-                <input id = "email" type="email" >
-                <span class = "errorMessage"></span>
+                <input id="email" type="email" placeholder="Email">
+                <span class="errorMessage"></span>
             </div>
-            <div class = "inputGroup">
+            <div class="inputGroup">
                 <label for="password">Password</label>
-                <input id = "password" type="password">
-                <span class = "errorMessage"></span>
+                <input id="password" type="password" placeholder="Password">
+                <span class="errorMessage"></span>
             </div>
-            <button>Login</button>
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe"> Remember me
+            </label>
+            <button id="login-btn">Login</button>
         </form>
-        <p class = "orSignIn">Or signIn with</p>
-        <button class = "Facebook">Facebook</button>
-        <button class = "Google">Google</button>
-        <p class = "NotAMember">Not a memeber? <a href="">Sign Up now</a></p>
+        <p class="orSignIn">Or signIn with</p>
+        <button class="Facebook">Facebook</button>
+        <button class="Google">Google</button>
+        <p class="NotAMember">Not a memeber? <a href="">Sign Up now</a></p>
     </main>
     <script src="autorization.js"></script>
     <script src="validation.js"></script>

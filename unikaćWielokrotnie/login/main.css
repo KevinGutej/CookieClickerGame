@@ -18,9 +18,7 @@ main {
     height: 70vh;
     width: 25vw;
     background-color: white;
-    box-shadow: 18px 13px 13px 5px rgba(122,117,117,0.75);
-    -webkit-box-shadow: 18px 13px 13px 5px rgba(122,117,117,0.75);
-    -moz-box-shadow: 18px 13px 13px 5px rgba(122,117,117,0.75);
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr repeat(4, 1fr);
@@ -67,4 +65,73 @@ form {
 
 .NotAMember {
     grid-area: signup;
+    color: rgb(108, 108, 108);
 }
+
+#email {
+    background-color: rgba(213, 219, 214);
+    border-style: none;
+    height: 5vh;
+    width: 18vw;
+    margin-bottom: 6px;
+}
+
+#password {
+    background-color: rgba(213, 219, 214);
+    border-style: none;
+    height: 5vh;
+    width: 18vw;
+    margin-top: 6px;
+}
+
+#email::placeholder {
+    font-size: 16px;
+}
+
+#password::placeholder {
+    font-size: 16px;
+}
+
+#login-btn {
+    margin-top: 35px;
+    height: 6vh;
+    width: 18vw;
+    background-color: rgb(190, 51, 167);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+
+.orSignIn {
+    margin-top: 35px;
+    color: rgb(108, 108, 108);
+}
+
+.Facebook {
+    width: 10vw;
+    height: 4vh;
+    background-color: white;
+    border: 1px solid grey;
+    color: blue;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Google {
+    width: 10vw;
+    height: 4vh;
+    background-color: white;
+    border: 1px solid grey;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.checkbox {
+    float: right;
+    margin-left: 0;
+    padding-right: 0;
+    color: rgb(108, 108, 108);
+    margin-top: 10px;
+}
+
